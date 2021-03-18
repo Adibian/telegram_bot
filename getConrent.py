@@ -144,7 +144,7 @@ def answer(bot, update):
         bot.send_message(update.message.chat_id, text='درخواست نامعتبر است!')
 
 
-updater = Updater('806434415:AAE5kxNqt1eA1Hfgu43MgIwUm64Q9YmNL7w')
+updater = Updater('API TOKEN')
 dp = updater.dispatcher
 dp.add_handler(CommandHandler('start', start))
 dp.add_handler(MessageHandler(Filters.text, answer))
